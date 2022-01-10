@@ -1,0 +1,35 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 22px;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.App{
+  margin: 20px auto;
+}
+/* .App{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between ;
+  align-items: center;
+  height:calc(100vh - 2px);
+  max-width: 500px;
+  border: 1px solid mediumblue;
+  margin: auto;
+} */
+
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */

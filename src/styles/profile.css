@@ -1,0 +1,15 @@
+body {
+	font-size: 14px;
+	margin: 50px;
+}
+p {
+	padding: 10px 20px;
+}
+.skill input {
+	margin: 10px;
+	background-color: yellowgreen;
+	color: white;
+}
+footer {
+	text-align: center;
+}

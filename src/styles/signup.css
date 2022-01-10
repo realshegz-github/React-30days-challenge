@@ -1,0 +1,43 @@
+body{
+    font-size: 14px;
+    margin: 50px;
+}
+.signup{
+    background: rgb(162, 206, 224);
+    height: 500px;
+    width:100%;
+    margin:100px auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    padding-bottom: 40px;
+}
+.content h3{
+    padding-bottom: 40px;
+}
+input{
+    width: 150px;
+    height: 30px;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+.input button{
+    margin-top: 40px;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    background: rgb(202, 85, 64);
+    border: none;
+    color: white;
+}
+.sub-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
