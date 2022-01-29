@@ -5,7 +5,7 @@ function SignUp() {
     return (
 			<div className="signup">
 				<div className="content">
-					<h3>SUBSCRIBE</h3>
+					<h1>SUBSCRIBE</h1>
 					<p>sing up with your email address to receive news and updates</p>
 				</div>
 				<div className="input">

@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+### WHAT IS REACT:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React is a JavaScript library for building a reusable user interface(UI)
 
-## Available Scripts
+# JSX:
 
-In the project directory, you can run:
+JSX stands for JavaScript XML. JSX allows us to write HTML elements with JavaScript code
+In JSX element we write className instead of class because class is a reserved word in JavaScript. Similar to className, htmlFor instead of for in label tag
+We can inject string, number, boolean, array data to JSX but we cannot directly inject an object
 
-### `npm start`
+### React Set up
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Node is a JavaScript runtime environment that allows JavaScript to run on the server.
+The create-react-app has configured a node server for the React Application.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Module
 
-### `npm test`
+A single or multiple functions, that can be exported and imported when needed, can be included in a project.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Package
 
-### `npm run build`
+A Package is a module or a collection of modules.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Node Package Manager(NPM)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+You do not need to install NPM separately - when you install node you will have also NPM. NPM is a default package manager for Node.js
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# React Boilerplate
 
-### `npm run eject`
+React boilerplate which has been created by create-react-app.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. node_modules - stores all the necessary node packages of the React applications.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Public
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Components
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Component is a small, reusable code, which is responsible for one part of the application UI.
+A React application is an aggregation of components
+Components in React are JavaScript functions or classes, that return a JSX.
+Component name must start with an uppercase, and if the name is two words, it should be CamelCase
 
-## Learn More
+## Components can be classified as:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Functional Component / Presentational Component / Stateless Component / Dumb Component
+- Class Component / Container Component/ Statefull Component / Smart Component
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+JavaScript function
+A JavaScript function could be either a regular function or an arrow function.
+These functions are not exactly the same there is a slight difference between them.
 
-### Code Splitting
+JavaScript Class
+A class is a blueprint of an object. We instantiate(declare) a class to create different objects.
+In addition, we can create children, by inheriting all the methods and properties of the parent.
+read more: https://www.geeksforgeeks.org/differences-between-functional-components-and-class-components-in-react/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Rendering components
 
-### Analyzing the Bundle Size
+When we call JSX element we use curly brackets--><Jsx/> and when we call components we do as follows
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# Props
 
-### Making a Progressive Web App
+Props is a special keyword in React that stands for properties and is used to pass data from one component to another and mostly from parent to child component.
+We can say props is a data carrier or a means to transport data.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+props is an object which you get instantly when you create a React component.
+A component can have one or many props.
+Props could be different data types.
 
-### Advanced Configuration
+only when properties are passed in the parent component that we can access with (props) in child component.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+It could be a string, number, boolean, array, object or a function.
+However, if we want to apply some logic it is hard to implement with statically written data, so it will be better to use a variable as props
 
-### Deployment
+HTML has onclick, onmouseover, onhover, onkeypress and etc event handlers. In React, these handlers are in camelCase.
+For instance onClick, onMouseOver, onKeyPress etc
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+propTypes
+The propTypes package helps us to assign the data types of the props we passed to a component.
 
-### `npm run build` fails to minify
+# defaultProps
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The defaultProps can be used when we want to have some default prop types for a component.
+
+When we use an object as props we usually destructure the data to access the values
+Destructuring makes our code easy to read
+
+### In React, we use map to modify an array to list of JSX by adding a certain HTML elements to each element of an array.
+
+Keys help React to identify items which have changed, added, or removed. Keys should be given to the elements inside the array to give the elements a stable identity.
+The key should be unique.
+Mostly data will come with as an id and we can use id as key
+If we do not pass key to React during mapping it raises a warning on the browser.
+
+### Class Component
+
+We will cover class components or stateful component.
+Only class based components used to have state and life cycle methods.
+
+However, after React version 16.8.0
+Functional components can have state and life cycle using React Hooks.

@@ -5,11 +5,6 @@ import javascript from '../../images/javascript.jpeg'
 import react from '../../images/react.png'
 import '../../styles/skills.css'
 
-// const displayImage = {
-//     display: flex,
-//     justifyContent: spaceBetween,
-//     alignItems: center
-// };
 
 function Skills() {
     return (
